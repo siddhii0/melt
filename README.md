@@ -1,52 +1,69 @@
-\# MELT – AI-Powered Mood-Based Comfort Food App
+<div align="center">
 
-MELT is a full-stack web application that understands a user’s emotional state from journal
-entries and recommends comforting food, color palettes, music vibes, and drink pairings.
-The project is built with a secure backend-first AI architecture and graceful fallback
-handling to ensure reliability.
+# 🍲 MELT  
+### AI-Powered Mood-Based Comfort Food Recommendation System
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=5C4AC7&center=true&width=700&lines=AI+Meets+Emotional+Wellness;Mood-Based+Food+%26+Drink+Recommendations;Secure+Full-Stack+AI+Application)](https://git.io/typing-svg)
+
+![Project Status](https://img.shields.io/badge/Status-Active-success?style=flat)
+![Tech](https://img.shields.io/badge/Tech-Full%20Stack-blue)
+![AI](https://img.shields.io/badge/AI-OpenAI-purple)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+
+</div>
 
 ---
 
-## 🌟 Key Features
+## 📖 About the Project
 
-- Mood analysis from free-text journal input
-- AI-powered recipe recommendations
-- Emotion-based color palette generation
-- Spotify playlist vibe suggestions
-- Drink pairing recommendations
-- Secure backend-only AI integration
-- Graceful fallback responses when AI is unavailable
-- Clean and responsive user interface
+**MELT** is a **full-stack AI-powered web application** that analyzes a user’s emotional state from journal entries and provides personalized comfort recommendations.
+
+The system suggests:
+- Comfort food recipes  
+- Mood-based color palettes  
+- Music playlist vibes  
+- Drink pairings  
+
+MELT is built using a **secure backend-first AI architecture**, ensuring that AI API keys are never exposed to the frontend. The application also includes **graceful fallback handling**, making it reliable even when AI services are unavailable.
+
+---
+
+## 🎯 Key Features
+
+- ✍️ Free-text journal input for mood expression  
+- 🧠 AI-based mood analysis  
+- 🍽️ Personalized comfort food recommendations  
+- 🎨 Emotion-driven color palette generation  
+- 🎵 Spotify playlist vibe suggestions  
+- ☕ Drink pairing recommendations  
+- 🔐 Secure backend-only AI integration  
+- 🛡️ Graceful fallback for AI failures  
 
 ---
 
 ## 🧠 System Architecture
 
-MELT follows a clean separation of concerns:
+- **Frontend**: Handles user interaction and UI rendering  
+- **Backend**: Exposes REST APIs and securely communicates with AI  
+- **AI Layer**: Integrated only on the backend (no client-side AI calls)  
 
-- **Frontend** handles user interaction and UI rendering  
-- **Backend** exposes REST APIs and securely communicates with the AI provider  
-- **AI keys are never exposed to the client**
-
-All AI requests are processed server-side, following real-world production security
-standards.
+This architecture follows **real-world production best practices**.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-**Frontend**
-- React
-- Vite
-- TypeScript
-- Tailwind CSS
+### Frontend
+- React  
+- Vite  
+- TypeScript  
+- Tailwind CSS  
 
-**Backend**
-- Node.js
-- Express
-- MongoDB
-- OpenAI API
-- JWT Authentication
+### Backend
+- Node.js  
+- Express.js  
+- MongoDB  
+- OpenAI API  
 
 ---
 
@@ -55,37 +72,67 @@ standards.
 MELT/
 ├── melt/ # Frontend (React + Vite)
 ├── melt-backend/ # Backend (Node.js + Express)
-├── README.md
+└── README.md
+
+
 
 ---
 
-## ⚙️ Setup & Installation
+## 🚀 Setup Guide
 
 ### Prerequisites
-- Node.js (v18+ recommended)
-- MongoDB (local or cloud)
+- Node.js (v18 or higher recommended)
+- MongoDB (local or cloud instance)
 - OpenAI API key
 
 ---
 
 ### Backend Setup
 
-```bash
+
 cd melt-backend
 npm install
 cp .env.example .env
 npm run dev
 
-
-The backend will start at:
+Backend will run on:
 http://localhost:8080
 
-Frontend Setup:
+
+Frontend Setup-
 cd melt
 npm install
 cp .env.example .env
 npm run dev
 
-The frontend will run at:
+Frontend will run on:
 http://localhost:5173
 
+
+🔗 API Endpoints
+Method	Endpoint	Description
+GET	/api/health	Backend health check
+GET	/api/ai/status	AI provider availability status
+POST	/api/ai/mood	Analyze mood & return food recommendations
+POST	/api/ai/drink	Provide drink pairing suggestions
+
+🔐 Security Considerations
+AI API keys stored only in backend environment variables
+.env files excluded from version control
+Frontend never communicates directly with AI providers
+CORS-restricted API access
+Graceful fallback responses prevent UI crashes
+
+🎓 Academic & Professional Value
+This project demonstrates:
+Full-stack application development
+Secure AI integration practices
+REST API design
+Error handling and fallback strategies
+Production-aware software engineering mindset
+
+👤 Author
+Siddhi Mishra
+
+📄 License
+This project is intended for portfolio purposes.
