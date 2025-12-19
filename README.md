@@ -90,20 +90,20 @@ MELT/
 ### Backend Setup
 
 
-cd melt-backend
-npm install
-cp .env.example .env
-npm run dev
+-cd melt-backend
+-npm install
+-cp .env.example .env
+-npm run dev
 
 Backend will run on:
 http://localhost:8080
 
 
 Frontend Setup-
-cd melt
-npm install
-cp .env.example .env
-npm run dev
+-cd melt
+-npm install
+-cp .env.example .env
+-npm run dev
 
 Frontend will run on:
 http://localhost:5173
@@ -111,28 +111,28 @@ http://localhost:5173
 
 🔗 API Endpoints
 Method	Endpoint	Description
-GET	/api/health	Backend health check
-GET	/api/ai/status	AI provider availability status
-POST	/api/ai/mood	Analyze mood & return food recommendations
-POST	/api/ai/drink	Provide drink pairing suggestions
+-GET	/api/health	Backend health check
+-GET	/api/ai/status	AI provider availability status
+-POST	/api/ai/mood	Analyze mood & return food recommendations
+-POST	/api/ai/drink	Provide drink pairing suggestions
 
-🔐 Security Considerations
-AI API keys stored only in backend environment variables
-.env files excluded from version control
-Frontend never communicates directly with AI providers
-CORS-restricted API access
-Graceful fallback responses prevent UI crashes
+🔐 Security Considerations-
+-AI API keys stored only in backend environment variables
+-.env files excluded from version control
+-Frontend never communicates directly with AI providers
+-CORS-restricted API access
+-Graceful fallback responses prevent UI crashes
 
 🎓 Academic & Professional Value
-This project demonstrates:
-Full-stack application development
-Secure AI integration practices
-REST API design
-Error handling and fallback strategies
-Production-aware software engineering mindset
+-This project demonstrates:
+-Full-stack application development
+-Secure AI integration practices
+-REST API design
+=Error handling and fallback strategies
+-Production-aware software engineering mindset
 
 👤 Author
-Siddhi Mishra
+--Siddhi Mishra
 
 📄 License
-This project is intended for portfolio purposes.
+-This project is intended for portfolio purposes.
