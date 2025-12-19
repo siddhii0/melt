@@ -1,20 +1,91 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+\# MELT – AI-Powered Mood-Based Comfort Food App
 
-# Run and deploy your AI Studio app
+MELT is a full-stack web application that understands a user’s emotional state from journal
+entries and recommends comforting food, color palettes, music vibes, and drink pairings.
+The project is built with a secure backend-first AI architecture and graceful fallback
+handling to ensure reliability.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## 🌟 Key Features
 
-## Run Locally
+- Mood analysis from free-text journal input
+- AI-powered recipe recommendations
+- Emotion-based color palette generation
+- Spotify playlist vibe suggestions
+- Drink pairing recommendations
+- Secure backend-only AI integration
+- Graceful fallback responses when AI is unavailable
+- Clean and responsive user interface
 
-**Prerequisites:**  Node.js
+---
+
+## 🧠 System Architecture
+
+MELT follows a clean separation of concerns:
+
+- **Frontend** handles user interaction and UI rendering  
+- **Backend** exposes REST APIs and securely communicates with the AI provider  
+- **AI keys are never exposed to the client**
+
+All AI requests are processed server-side, following real-world production security
+standards.
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+
+**Backend**
+- Node.js
+- Express
+- MongoDB
+- OpenAI API
+- JWT Authentication
+
+---
+
+## 📁 Project Structure
+
+MELT/
+├── melt/ # Frontend (React + Vite)
+├── melt-backend/ # Backend (Node.js + Express)
+├── README.md
+
+---
+
+## ⚙️ Setup & Installation
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- MongoDB (local or cloud)
+- OpenAI API key
+
+---
+
+### Backend Setup
+
+```bash
+cd melt-backend
+npm install
+cp .env.example .env
+npm run dev
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The backend will start at:
+http://localhost:8080
+
+Frontend Setup:
+cd melt
+npm install
+cp .env.example .env
+npm run dev
+
+The frontend will run at:
+http://localhost:5173
+
